@@ -1,0 +1,5 @@
+---
+title: "About This Website"
+---
+
+This is a website focused on providing R enthusiasts with an easy to navigate reference guide for how to perform a vast number of statistical analyses using R, RStudio and occasionally Quarto. I hope you find it useful for your needs

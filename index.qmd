@@ -1,0 +1,5 @@
+---
+title: "R for Statistical Analysis"
+---
+
+Welcome to this R workshop reference website! Here you will find all information covered in the R workshop in both a website form and a downloadable PDF form for easy reference. I hope you found the R workshop helpful and I encourage everyone to provide feedback so that I can improve should I run other R workshops in the future. 
