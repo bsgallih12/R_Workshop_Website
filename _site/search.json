@@ -54,5 +54,271 @@
     "title": "About This Website",
     "section": "",
     "text": "This is a website focused on providing R enthusiasts with an easy to navigate reference guide for how to perform a vast number of statistical analyses using R, RStudio and occasionally Quarto. I hope you find it useful for your needs"
+  },
+  {
+    "objectID": "Workshop.html",
+    "href": "Workshop.html",
+    "title": "R Workshop",
+    "section": "",
+    "text": "If you’re someone who likes to use\n\n\n\n\n\n\n\n\n\n\n  to run data analysis, you’re using already “using”"
+  },
+  {
+    "objectID": "Workshop.html#fun-fact",
+    "href": "Workshop.html#fun-fact",
+    "title": "R Workshop",
+    "section": "Fun Fact",
+    "text": "Fun Fact\n\nIf you’re someone who likes to use\n\n\n  to run data analysis, you’re using already “using”"
+  },
+  {
+    "objectID": "Workshop.html#downloading-r",
+    "href": "Workshop.html#downloading-r",
+    "title": "R Workshop",
+    "section": "Downloading R",
+    "text": "Downloading R\n\n\n\n\nYou’ll want to download R first before downloading any additional software\nYou can download the newest version of R (4.2) here"
+  },
+  {
+    "objectID": "Workshop.html#downloading-rstudio",
+    "href": "Workshop.html#downloading-rstudio",
+    "title": "R Workshop",
+    "section": "Downloading RStudio",
+    "text": "Downloading RStudio\n\n\n\n\nRStudio is the last software program you’ll need to get started\nYou can download the newest version of RStudio (Dec 2022) here"
+  },
+  {
+    "objectID": "Workshop.html#r-quirks",
+    "href": "Workshop.html#r-quirks",
+    "title": "R Workshop",
+    "section": "R “Quirks”",
+    "text": "R “Quirks”\n\n\n\nR is case sensitive so what your spelling and the case you use\n\nCase =/= case\n\n\n\n\nR hates spaces for variable. It will not run with a space\n\nvariable_1 is a GOOD variable name\nvariable 1 is a BAD variable name"
+  },
+  {
+    "objectID": "Workshop.html#downloading-materials-for-day-1",
+    "href": "Workshop.html#downloading-materials-for-day-1",
+    "title": "R Workshop",
+    "section": "Downloading Materials For Day 1",
+    "text": "Downloading Materials For Day 1\nYou can download all the materials for Day 1 of this workshop here * You want the correlation.qmd, data_clean.qmd, ttest.qmd, and regression.qmd files"
+  },
+  {
+    "objectID": "Workshop.html#installing-and-loading-packages",
+    "href": "Workshop.html#installing-and-loading-packages",
+    "title": "R Workshop",
+    "section": "Installing and Loading Packages",
+    "text": "Installing and Loading Packages\n\nR CodeCommentary\n\n\n\n# To Install a Package\ninstall.packages(\"tidyverse\")\n\n# To Load a Package\nlibrary(tidyverse)\n\n\n\n\nYou only have to install a package once (one exception)\nYou must load a library every time you open an R file (.R, .qmd, .rmd, etc) or restart R/RStudio\n\n\n\n\n\n\n\nImportant\n\n\nA new install of R will remove all installed packages. You must either re-install the packages or save them prior to a new R installation. I’ll cover how to save them at a later date"
+  },
+  {
+    "objectID": "Workshop.html#importing-data",
+    "href": "Workshop.html#importing-data",
+    "title": "R Workshop",
+    "section": "Importing Data",
+    "text": "Importing Data\n\nCommentaryR Code\n\n\n\nR works best with csv files (smaller in size) but it will take .sav files (SPSS) and other file formats as well (e.g., .tsv)\nOh and obviously it can read Microsoft Excel files\n\n\n\n\n# For CSV\n\ndata &lt;- read.csv(\"file_name.csv\")\n\n# For TSV\n\ndata &lt;- read_tsv(\"file_name.tsv\")\n\n# For SAV\n\nlibrary(haven)\ndata &lt;- read_sav(\"file_name.sav\")\n\n# For EXCEL\n\nlibrary(readxl)\ndata &lt;- read_xlsx(\"file_name.xlsx\")\ndata &lt;- read_xls(\"file_name.xls\")"
+  },
+  {
+    "objectID": "Workshop.html#variable-types",
+    "href": "Workshop.html#variable-types",
+    "title": "R Workshop",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nNumerical\n\nA positive or negative number between (- \\(\\infty\\), \\(\\infty\\))\n\nInteger\n\nA positive or negative whole number between (- \\(\\infty\\), \\(\\infty\\))\n\nFactor\n\nA grouping category\n\nCharacter\n\nA text string\n\nLogical\n\nA TRUE or FALSE value (e.g., Is X &gt; 1?)\n\nDate\n\nExactly what you think it is"
+  },
+  {
+    "objectID": "Workshop.html#uses-for-the-dplyr-package",
+    "href": "Workshop.html#uses-for-the-dplyr-package",
+    "title": "R Workshop",
+    "section": "Uses for the dplyr package",
+    "text": "Uses for the dplyr package\n\nPrimary use is to transform and manipulate data in a data set\n\nCalculate means, log transform, compute basic summary statistics\n\nAnyone here who has maybe used database data will see it mimics SQL programming\n\n\n\n\n\n\n\nNote\n\n\nFor anyone who might work with database data, you can pull data from external databases with R and RStudio. We won’t cover that in this workshop but you can do it"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding",
+    "href": "Workshop.html#live-ish-coding",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nOpen the data_clean.qmd file provided. We’re going to walk through some example code and then live code a little bit"
+  },
+  {
+    "objectID": "Workshop.html#uses-for-the-stringr-package",
+    "href": "Workshop.html#uses-for-the-stringr-package",
+    "title": "R Workshop",
+    "section": "Uses for the stringr package",
+    "text": "Uses for the stringr package\n\nPrimarily used for dealing with character or string data\n\nUseful for free response questions\nEssentially it’s the dplyr package for string variable types"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-1",
+    "href": "Workshop.html#live-ish-coding-1",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nGo back to the data_clean.qmd file provided. We’re going to walk through some example code and then live code a little bit"
+  },
+  {
+    "objectID": "Workshop.html#uses-for-the-lubridate-package",
+    "href": "Workshop.html#uses-for-the-lubridate-package",
+    "title": "R Workshop",
+    "section": "Uses for the lubridate package",
+    "text": "Uses for the lubridate package\n\nPrimarily used for dealing with dates\nProvides handy function for converting date formats into other date formats\n\nE.g., (MM-DD-YY to DD-MM-YY or Month Date, Year)\n\n\n\n\n\n\n\n\nTip\n\n\nIt won’t auto convert your dates to weird incorrect formats like certain spreadsheet programs might."
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-2",
+    "href": "Workshop.html#live-ish-coding-2",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nGo back to the data_clean.qmd file provided. We’re going to walk through some example code and then live code a little bit"
+  },
+  {
+    "objectID": "Workshop.html#uses-for-the-ggplot2-package",
+    "href": "Workshop.html#uses-for-the-ggplot2-package",
+    "title": "R Workshop",
+    "section": "Uses for the ggplot2 package",
+    "text": "Uses for the ggplot2 package\n\nThis may be the most popular package download in R and it’s probably not close\nThis is THE visualization package in R. If you can THINK of a graphic, this package can create it\n\nE.g. box plots, box and whisker plots, violin plots, bar graphs, etc\n\nIf you’re REALLY good, you can do this (credit @ralitza_s)"
+  },
+  {
+    "objectID": "Workshop.html#liveish-coding",
+    "href": "Workshop.html#liveish-coding",
+    "title": "R Workshop",
+    "section": "“Live”ish Coding",
+    "text": "“Live”ish Coding\n\nGo back to the data_clean.qmd file provided. We’re going to walk through some example code and then live code a little bit"
+  },
+  {
+    "objectID": "Workshop.html#section-1",
+    "href": "Workshop.html#section-1",
+    "title": "R Workshop",
+    "section": "",
+    "text": "CommentaryExcelSPSS or SASCSV\n\n\n\nSometimes you want or need to export data you’ve cleaned to another program. Maybe you want to use a program like JASP\nOr you’re not comfortable using R for analyses yet so you want to use SPSS\nOr maybe others on your team use a different program\nR can export to Excel, SPSS, SAS, and CSV files\n\n\n\n\nlibrary(openxlsx)\n\nwrite.xlsx(df,file = \"filename.xlsx\")\n\n\n\n\nlibrary(haven)\n\n# For SPSS\nwrite_sav(df, path = \"filename.sav\")\n\n# For SAS\nwrite_sas(df, path = \"filename.sas\")\n\n\n\n\nwrite.csv(df, file = \"filename.csv\")"
+  },
+  {
+    "objectID": "Workshop.html#assumptions-fields-et-al-2012",
+    "href": "Workshop.html#assumptions-fields-et-al-2012",
+    "title": "R Workshop",
+    "section": "Assumptions (Fields et al, 2012)",
+    "text": "Assumptions (Fields et al, 2012)\n\nOn at least an interval scale\nNormality of Residuals"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-3",
+    "href": "Workshop.html#live-ish-coding-3",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease see correlation.qmd file provided"
+  },
+  {
+    "objectID": "Workshop.html#assumptions-fields-et-al-2012-1",
+    "href": "Workshop.html#assumptions-fields-et-al-2012-1",
+    "title": "R Workshop",
+    "section": "Assumptions (Fields et al, 2012)",
+    "text": "Assumptions (Fields et al, 2012)\n\nNormality of Residuals\nIndependent Observations\nHomogeneity of Variance"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-4",
+    "href": "Workshop.html#live-ish-coding-4",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease see the ttest.qmd file provided"
+  },
+  {
+    "objectID": "Workshop.html#assumptions-fields-et-al-2012-2",
+    "href": "Workshop.html#assumptions-fields-et-al-2012-2",
+    "title": "R Workshop",
+    "section": "Assumptions (Fields et al, 2012)",
+    "text": "Assumptions (Fields et al, 2012)\n\nOutliers and Influential Cases\nNormality of Residuals\nIndependent Observations\nHomogeneity of Variance\n\n\n\n\n\n\n\nImportant\n\n\nWhile important, outliers and influential cases rarely influence results with a sufficient sample size. Also difficult to say what “is” and “isn’t” an outlier. Outlier shouldn’t always mean removal"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-5",
+    "href": "Workshop.html#live-ish-coding-5",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease open the regression.qmd file provided"
+  },
+  {
+    "objectID": "Workshop.html#downloading-material-for-day-2",
+    "href": "Workshop.html#downloading-material-for-day-2",
+    "title": "R Workshop",
+    "section": "Downloading Material For Day 2",
+    "text": "Downloading Material For Day 2\nYou can download all the materials for Day 2 of this workshop here * You want the anova.qmd, nonparametric.qmd, intro_qarto.qmd, mlm.qmd, sem.qmd and factor_analysis.qmd"
+  },
+  {
+    "objectID": "Workshop.html#assumptions-fields-et-al-2012-3",
+    "href": "Workshop.html#assumptions-fields-et-al-2012-3",
+    "title": "R Workshop",
+    "section": "Assumptions (Fields et al, 2012)",
+    "text": "Assumptions (Fields et al, 2012)\n\nNormality Within Groups\nHomogeneity of Variance\nIndependent Observations"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-6",
+    "href": "Workshop.html#live-ish-coding-6",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease open the anova.qmd file provided"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-7",
+    "href": "Workshop.html#live-ish-coding-7",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease open the nonparametric.qmd file"
+  },
+  {
+    "objectID": "Workshop.html#efa-assumptions-fields-et-al-2012",
+    "href": "Workshop.html#efa-assumptions-fields-et-al-2012",
+    "title": "R Workshop",
+    "section": "EFA Assumptions (Fields et al, 2012)",
+    "text": "EFA Assumptions (Fields et al, 2012)\n\nSufficient Sample Size\nNormality of Items\nCorrelation Between Items1\nAppropriate Determinant (Det \\(&gt;\\) 1 x 10-5)\n\n\n\n\n\n\n\nImportant\n\n\n\nWe want variables to correlate however we do not want them to correlate either  too low (r \\(&lt;\\) .30) or too high (r \\(&gt;\\) .80) across multiple items"
+  },
+  {
+    "objectID": "Workshop.html#cfa-assumptions",
+    "href": "Workshop.html#cfa-assumptions",
+    "title": "R Workshop",
+    "section": "CFA Assumptions",
+    "text": "CFA Assumptions\n\nMultivariate Normality"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-8",
+    "href": "Workshop.html#live-ish-coding-8",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease open the factor_analysis.qmd file"
+  },
+  {
+    "objectID": "Workshop.html#assumptions-to-test-kaplan-2001-p.-15218",
+    "href": "Workshop.html#assumptions-to-test-kaplan-2001-p.-15218",
+    "title": "R Workshop",
+    "section": "Assumptions To Test (Kaplan, 2001, p. 15218)",
+    "text": "Assumptions To Test (Kaplan, 2001, p. 15218)\n\nMultivariate Normality\nNo Systematic Missing Data\nSufficiently Large Sample Size\nCorrect Model Specification"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-9",
+    "href": "Workshop.html#live-ish-coding-9",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease open the sem.qmd file"
+  },
+  {
+    "objectID": "Workshop.html#assumptions-to-test",
+    "href": "Workshop.html#assumptions-to-test",
+    "title": "R Workshop",
+    "section": "Assumptions To Test",
+    "text": "Assumptions To Test\n\nOutliers and Influential Cases\nNormality of Residuals\nIndependent Observations1\nHomogeneity of Variance\n\n\n\n\n\n\n\nA Note On Independence\n\n\n\nThis assumption is not necessarily a concern given that MLM assumes observations are nested (Fields et al, 2012)"
+  },
+  {
+    "objectID": "Workshop.html#live-ish-coding-10",
+    "href": "Workshop.html#live-ish-coding-10",
+    "title": "R Workshop",
+    "section": "Live-ish Coding",
+    "text": "Live-ish Coding\n\nPlease open the mlm.qmd file"
+  },
+  {
+    "objectID": "Workshop.html#the-holy-grail-of-reproducibility",
+    "href": "Workshop.html#the-holy-grail-of-reproducibility",
+    "title": "R Workshop",
+    "section": "The Holy Grail of Reproducibility",
+    "text": "The Holy Grail of Reproducibility\n\nWhat if I told you that it was possible to generate 95% of what you need for a manuscript within RStudio AND you could integrate your analyses as well?\nWhat if I also said you could export this to Microsoft Word?"
+  },
+  {
+    "objectID": "Workshop.html#lets-talk-about-quarto",
+    "href": "Workshop.html#lets-talk-about-quarto",
+    "title": "R Workshop",
+    "section": "Let’s Talk About Quarto",
+    "text": "Let’s Talk About Quarto\n\nPlease open the intro_quarto.qmd file"
+  },
+  {
+    "objectID": "Workshop.html#section-2",
+    "href": "Workshop.html#section-2",
+    "title": "R Workshop",
+    "section": "",
+    "text": "Firstly, thank you for your time this weekend and I hope you’ve learned something\nSecond, this is A LOT. I crammed stuffed about 2 years of statistical analyses time and practice into like 2 days. It’s okay and normal if you’re swimming. I’m here if anyone has any questions after or even if they’re using R and trying to do an actual analysis in R. People ask me for help all the time. I’m happy to help\nFinally, one last “minor” detail. Some of you already know this but lets just check out the following link"
   }
 ]

@@ -9,6 +9,8 @@ website:
       - text: "About"
         file: about.qmd
     right: 
+      - text: "Presentation"
+        file: Workshop.qmd
       - text: R Workshop
         menu:
           - data_clean.qmd
