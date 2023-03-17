@@ -14,6 +14,7 @@ website:
       - text: R Workshop
         menu:
           - data_clean.qmd
+          - correlation.qmd
 format:
   html:
     theme: 
