@@ -1,5 +1,5 @@
 ---
-title: "R Workshop: Data Visualization and Management"
+title: "Data Visualization and Management"
 author: "Brier Gallihugh, M.S."
 date: today
 format:

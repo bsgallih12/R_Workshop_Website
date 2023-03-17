@@ -9,7 +9,7 @@ website:
       - text: "About"
         file: about.qmd
     right: 
-      - text: R Basics
+      - text: R Workshop
         menu:
           - data_clean.qmd
 format:
