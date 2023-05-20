@@ -1,5 +1,5 @@
 ---
-title: "Correlation"
+title: "R Workshop: Correlation"
 author: "Brier Gallihugh, M.S."
 date: today
 format: 
@@ -9,7 +9,7 @@ format:
     self-contained: true
 toc: true
 toc-location: right
-toc-depth: 3
+toc-depth: 4
 warning: FALSE
 echo: true
 ---
@@ -42,7 +42,7 @@ For this part of the workshop, we are going to focus on the `mpg` and `wt` varia
 1. Odds are your statistical test is going to fail pretty much every single time. Particularly if you use something like a Shapiro Wilk test, but we'll look at it anyway
 :::
 
-### Graphical Depiction of Normality Assumption (mpg)
+#### Graphical Depiction of Normality Assumption (mpg)
 ```{r correlation mpg}
 #| layout-nrow: 1
 mpg_plot <- ggplot(data,aes(x = mpg)) + # <1>
@@ -50,13 +50,14 @@ mpg_plot <- ggplot(data,aes(x = mpg)) + # <1>
   stat_function(fun = dnorm, # <1>
                 args = list(mean = mean(data$mpg), # <1>
                             sd = sd(data$mpg)), # <1>
-                col = "blue") # <1>
+                col = "blue") + # <1>
+  theme_classic() # <1>
 
 print(mpg_plot)
 ```
 1. This should look very familiar to the histogram part of the workshop
 
-### Statistical Depiction of Normality Assumption (mpg)
+#### Statistical Depiction of Normality Assumption (mpg)
 ```{r correlation mpg stat}
 #| layout-nrow: 2
 
@@ -67,7 +68,7 @@ print(shapiro.test(data$mpg)) # <2>
 1. The `psych` package has a bunch of nifty functions for social science research. One is the `describe()` function which gives you a bunch of variable level summary statistics (e.g., mean, median, se, etc.)
 2. The `shapiro.test()` performs a Shapiro Wilk test of normality. Keep in mind this particular test is very sensitive to sample sizes
 
-### Graphical Depiction of Normality Assumption (wt)
+#### Graphical Depiction of Normality Assumption (wt)
 ```{r correlation wt}
 #| layout-nrow: 1
 wt_plot <- ggplot(data,aes(x = wt)) +
@@ -75,13 +76,14 @@ wt_plot <- ggplot(data,aes(x = wt)) +
   stat_function(fun = dnorm,
                 args = list(mean = mean(data$wt),
                             sd = sd(data$wt)),
-                col = "blue")
+                col = "blue") + 
+  theme_classic()
 
 print(wt_plot)
 ```
 
 
-### Statistical Depiction of Normality Assumption (wt)
+#### Statistical Depiction of Normality Assumption (wt)
 ```{r correlation wt stat}
 #| layout-nrow: 2
 print(psych::describe(data$wt))
@@ -116,6 +118,7 @@ print(corr_results)
 While the above is great, notice we didn't get a confidence interval output despite asking for it with `ci = TRUE`. Sometimes R will store complex computations within the output object (e.g., `corr_results`). To get this output we can put a $ after the output. If there is extra information stored, but not shown, we'll get a drop down box. We want the `ci` option. Below we will see the output that results from this. We should see the following:
 
 $r$ = -.87 , $p$ < .001 with a CI = [-.93,-.74]
+
 ```{r correlation ci}
 print(corr_results$ci)
 ```
