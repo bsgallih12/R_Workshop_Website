@@ -600,5 +600,145 @@
     "title": "R Workshop: Mediation and Moderation",
     "section": "Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)",
     "text": "Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)\nClick on the following link to download the R script for the PROCESS macro for R.\n\nsource(\"process.R\")\n\n\n********************* PROCESS for R Version 4.3.1 ********************* \n \n           Written by Andrew F. Hayes, Ph.D.  www.afhayes.com              \n   Documentation available in Hayes (2022). www.guilford.com/p/hayes3   \n \n*********************************************************************** \n \nPROCESS is now ready for use.\nCopyright 2020-2023 by Andrew F. Hayes ALL RIGHTS RESERVED\nWorkshop schedule at http://haskayne.ucalgary.ca/CCRAM"
+  },
+  {
+    "objectID": "videos.html#data-manipulation",
+    "href": "videos.html#data-manipulation",
+    "title": "Material & Videos",
+    "section": "Data Manipulation",
+    "text": "Data Manipulation\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#data-visualization",
+    "href": "videos.html#data-visualization",
+    "title": "Material & Videos",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#correlation",
+    "href": "videos.html#correlation",
+    "title": "Material & Videos",
+    "section": "Correlation",
+    "text": "Correlation\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#t-tests",
+    "href": "videos.html#t-tests",
+    "title": "Material & Videos",
+    "section": "T-Tests",
+    "text": "T-Tests\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#regression",
+    "href": "videos.html#regression",
+    "title": "Material & Videos",
+    "section": "Regression",
+    "text": "Regression\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#logistic-regression",
+    "href": "videos.html#logistic-regression",
+    "title": "Material & Videos",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#anova",
+    "href": "videos.html#anova",
+    "title": "Material & Videos",
+    "section": "ANOVA",
+    "text": "ANOVA\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#factorial-anova",
+    "href": "videos.html#factorial-anova",
+    "title": "Material & Videos",
+    "section": "Factorial ANOVA",
+    "text": "Factorial ANOVA\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#independent-sample-t-test-non-parametric",
+    "href": "videos.html#independent-sample-t-test-non-parametric",
+    "title": "Material & Videos",
+    "section": "Independent Sample T-Test (Non-Parametric)",
+    "text": "Independent Sample T-Test (Non-Parametric)\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#dependent-sample-t-test-non-parametric",
+    "href": "videos.html#dependent-sample-t-test-non-parametric",
+    "title": "Material & Videos",
+    "section": "Dependent Sample T-Test (Non-Parametric)",
+    "text": "Dependent Sample T-Test (Non-Parametric)\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#anova-non-parametric",
+    "href": "videos.html#anova-non-parametric",
+    "title": "Material & Videos",
+    "section": "ANOVA (Non-Parametric)",
+    "text": "ANOVA (Non-Parametric)\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#repeated-measures-anova-non-parametric",
+    "href": "videos.html#repeated-measures-anova-non-parametric",
+    "title": "Material & Videos",
+    "section": "Repeated Measures ANOVA (Non-Parametric)",
+    "text": "Repeated Measures ANOVA (Non-Parametric)\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#mediation",
+    "href": "videos.html#mediation",
+    "title": "Material & Videos",
+    "section": "Mediation",
+    "text": "Mediation\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#moderation",
+    "href": "videos.html#moderation",
+    "title": "Material & Videos",
+    "section": "Moderation",
+    "text": "Moderation\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#mediation-and-moderation-process",
+    "href": "videos.html#mediation-and-moderation-process",
+    "title": "Material & Videos",
+    "section": "Mediation and Moderation (PROCESS)",
+    "text": "Mediation and Moderation (PROCESS)\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#factor-analysis",
+    "href": "videos.html#factor-analysis",
+    "title": "Material & Videos",
+    "section": "Factor Analysis",
+    "text": "Factor Analysis\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#confirmatory-factor-analysis",
+    "href": "videos.html#confirmatory-factor-analysis",
+    "title": "Material & Videos",
+    "section": "Confirmatory Factor Analysis",
+    "text": "Confirmatory Factor Analysis\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#structural-equation-modeling",
+    "href": "videos.html#structural-equation-modeling",
+    "title": "Material & Videos",
+    "section": "Structural Equation Modeling",
+    "text": "Structural Equation Modeling\nThe link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html",
+    "href": "videos.html",
+    "title": "Material & Videos",
+    "section": "",
+    "text": "The link to the video can be found here\nThe materials can be found here"
+  },
+  {
+    "objectID": "videos.html#r-basics",
+    "href": "videos.html#r-basics",
+    "title": "Material & Videos",
+    "section": "",
+    "text": "The link to the video can be found here\nThe materials can be found here"
   }
 ]

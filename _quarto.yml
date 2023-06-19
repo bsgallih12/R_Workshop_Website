@@ -11,6 +11,8 @@ website:
     right: 
       - text: "Presentation"
         file: Workshop.qmd
+      - text: "Materials & Videos"
+        file: videos.qmd
       - text: R Workshop
         menu:
           - data_clean.qmd
