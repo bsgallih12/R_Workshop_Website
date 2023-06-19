@@ -3,3 +3,8 @@ title: "R for Statistical Analysis"
 ---
 
 Welcome to this R workshop reference website! Here you will find all information covered in the R workshop in both a website form and a downloadable PDF form for easy reference. I hope you found the R workshop helpful and I encourage everyone to provide feedback so that I can improve should I run other R workshops in the future. 
+
+::: {.callout-note}
+### A Thank You To Andy Field and Colleagues (2012)
+This work (and much of the code) would not have been possible without fantastic "Discovering Statistics Using R" by Field et al (2012) as a reference guide (found [here](https://www.discoveringstatistics.com/books/discovering-statistics-using-r/)) for myself. This book is a fantastic resource for anyone interested in doing data analysis in R
+:::
