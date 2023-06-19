@@ -394,5 +394,3 @@ You can download all the materials for Day 2 of this workshop [here](https://git
 Firstly, thank you for your time this weekend and I hope you've learned something
 
 Second, this is A LOT. I crammed stuffed about 2 years of statistical analyses time and practice into like 2 days. It's okay and normal if you're swimming. I'm here if anyone has any questions after or even if they're using R and trying to do an actual analysis in R. People ask me for help all the time. I'm happy to help
-
-Finally, one last "minor" detail. Some of you already know this but lets just check out the following [link](https://stats-r-workshop.netlify.app)
