@@ -3,11 +3,12 @@ title: "R Workshop: CFA & Structural Equation Modeling"
 author: "Brier Gallihugh, M.S."
 date: today
 format:
-  html:
-    theme: default
-    code-annotations: select
-    self-contained: true
-  pdf: default
+#  html:
+#    theme: default
+#    code-annotations: select
+#    self-contained: true
+#  pdf: default
+  docx: default
 toc: true
 toc-location: right
 toc-depth: 3
