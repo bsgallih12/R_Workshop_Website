@@ -4551,7 +4551,7 @@ vertical-align: -.125em;
   <li><a href="#confirmatory-factor-analysis" id="toc-confirmatory-factor-analysis" class="nav-link active" data-scroll-target="#confirmatory-factor-analysis">Confirmatory Factor Analysis</a></li>
   <li><a href="#structural-equation-modeling" id="toc-structural-equation-modeling" class="nav-link" data-scroll-target="#structural-equation-modeling">Structural Equation Modeling</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="SEM.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="SEM.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="SEM.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -4602,15 +4602,15 @@ vertical-align: -.125em;
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="1" data-code-lines="8">Create overall data for CFA</span>
+<span data-code-annotation="1" data-code-lines="8" data-code-cell="annotated-cell-1">Create overall data for CFA</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="2" data-code-lines="10">Randomly sample 300 observations from <code>data</code> using <code>sample()</code> function</span>
+<span data-code-annotation="2" data-code-lines="10" data-code-cell="annotated-cell-1">Randomly sample 300 observations from <code>data</code> using <code>sample()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="3" data-code-lines="12">Create data for SEM using the <code>PoliticalDemocracy</code> data set from the <code>lavaan</code> package. Omit missing data using the <code>na.omit()</code> function</span>
+<span data-code-annotation="3" data-code-lines="12" data-code-cell="annotated-cell-1">Create data for SEM using the <code>PoliticalDemocracy</code> data set from the <code>lavaan</code> package. Omit missing data using the <code>na.omit()</code> function</span>
 </dd>
 </dl>
 </div>
@@ -4631,15 +4631,15 @@ vertical-align: -.125em;
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="1" data-code-lines="5">Run a CFA on the model above using the <code>cfa()</code> function</span>
+<span data-code-annotation="1" data-code-lines="5" data-code-cell="annotated-cell-2">Run a CFA on the model above using the <code>cfa()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="2" data-code-lines="7">Generate CFA output and fit measures using the <code>summary()</code> function with the <code>fit.measures</code> argument set to <code>TRUE</code></span>
+<span data-code-annotation="2" data-code-lines="7" data-code-cell="annotated-cell-2">Generate CFA output and fit measures using the <code>summary()</code> function with the <code>fit.measures</code> argument set to <code>TRUE</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="3" data-code-lines="9">Create a basic path diagram of the CFA model using the <code>semPaths()</code> function with standardized coefficients using the <code>std</code> argument</span>
+<span data-code-annotation="3" data-code-lines="9" data-code-cell="annotated-cell-2">Create a basic path diagram of the CFA model using the <code>semPaths()</code> function with standardized coefficients using the <code>std</code> argument</span>
 </dd>
 </dl>
 </div>
@@ -4772,15 +4772,15 @@ Tip
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-annotation="1" data-code-lines="13">Run an SEM model using the <code>sem()</code> function</span>
+<span data-code-annotation="1" data-code-lines="13" data-code-cell="annotated-cell-3">Run an SEM model using the <code>sem()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-annotation="2" data-code-lines="14">Generate a summary of the SEM model with standardized results and fit measures using the <code>summary()</code> function with the <code>standardized</code> and <code>fit.measures()</code> arguments set to <code>TRUE</code></span>
+<span data-code-annotation="2" data-code-lines="14" data-code-cell="annotated-cell-3">Generate a summary of the SEM model with standardized results and fit measures using the <code>summary()</code> function with the <code>standardized</code> and <code>fit.measures()</code> arguments set to <code>TRUE</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-annotation="3" data-code-lines="15">Generate a basic path diagram of the SEM model usign the <code>semPaths()</code> function with standardized coefficients using the <code>std</code> argument.</span>
+<span data-code-annotation="3" data-code-lines="15" data-code-cell="annotated-cell-3">Generate a basic path diagram of the SEM model usign the <code>semPaths()</code> function with standardized coefficients using the <code>std</code> argument.</span>
 </dd>
 </dl>
 </div>
