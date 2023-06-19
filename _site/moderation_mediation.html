@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Brier Gallihugh, M.S.">
-<meta name="dcterms.date" content="2023-06-18">
+<meta name="dcterms.date" content="2023-06-19">
 
 <title>R for Statistical Analysis - R Workshop: Mediation and Moderation</title>
 <style>
@@ -4521,7 +4521,10 @@ vertical-align: -.125em;
     <a class="dropdown-item" href="./moderation_mediation.html" rel target>
  <span class="dropdown-text">R Workshop: Mediation and Moderation</span></a>
   </li>  
-        <li class="dropdown-header">nonparametric.qmd</li>
+        <li>
+    <a class="dropdown-item" href="./nonparametric.html" rel target>
+ <span class="dropdown-text">R Workshop: Non-Parametric Tests</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./SEM.html" rel target>
  <span class="dropdown-text">R Workshop: CFA &amp; Structural Equation Modeling</span></a>
@@ -4549,11 +4552,9 @@ vertical-align: -.125em;
   <li><a href="#running-a-mediation-analysis-in-r" id="toc-running-a-mediation-analysis-in-r" class="nav-link" data-scroll-target="#running-a-mediation-analysis-in-r">Running a Mediation Analysis in R</a></li>
   <li><a href="#assumptions-of-moderation-analyses" id="toc-assumptions-of-moderation-analyses" class="nav-link" data-scroll-target="#assumptions-of-moderation-analyses">Assumptions of Moderation Analyses</a></li>
   <li><a href="#assumptions-of-mediation-analyses" id="toc-assumptions-of-mediation-analyses" class="nav-link" data-scroll-target="#assumptions-of-mediation-analyses">Assumptions of Mediation Analyses</a></li>
-  <li><a href="#using-moderation-and-mediation-usings-hayes-process-macro-for-r" id="toc-using-moderation-and-mediation-usings-hayes-process-macro-for-r" class="nav-link" data-scroll-target="#using-moderation-and-mediation-usings-hayes-process-macro-for-r">Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)</a>
-  <ul class="collapse">
+  <li><a href="#using-moderation-and-mediation-usings-hayes-process-macro-for-r" id="toc-using-moderation-and-mediation-usings-hayes-process-macro-for-r" class="nav-link" data-scroll-target="#using-moderation-and-mediation-usings-hayes-process-macro-for-r">Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)</a></li>
   <li><a href="#a-moderation-example-using-hayes-process-macro" id="toc-a-moderation-example-using-hayes-process-macro" class="nav-link" data-scroll-target="#a-moderation-example-using-hayes-process-macro">A Moderation Example Using Hayes PROCESS Macro</a></li>
   <li><a href="#a-mediation-example-using-hayes-process-macro" id="toc-a-mediation-example-using-hayes-process-macro" class="nav-link" data-scroll-target="#a-mediation-example-using-hayes-process-macro">A Mediation Example Using Hayes PROCESS Macro</a></li>
-  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="moderation_mediation.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -4579,7 +4580,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 18, 2023</p>
+      <p class="date">June 19, 2023</p>
     </div>
   </div>
   
@@ -4615,11 +4616,11 @@ vertical-align: -.125em;
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="1">Create a mediation object using the <code>lm()</code> function. The condition*predictor syntax gets you both the main effects of condition and predictor as well as the interaction effect between the two</span>
+<span data-code-lines="1" data-code-cell="annotated-cell-2" data-code-annotation="1">Create a mediation object using the <code>lm()</code> function. The condition*predictor syntax gets you both the main effects of condition and predictor as well as the interaction effect between the two</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="2">Show a summary of the moderation using the <code>summary()</code> function.</span>
+<span data-code-lines="2" data-code-cell="annotated-cell-2" data-code-annotation="2">Show a summary of the moderation using the <code>summary()</code> function.</span>
 </dd>
 </dl>
 </div>
@@ -4674,31 +4675,31 @@ F-statistic: 33.16 on 3 and 96 DF,  p-value: 8.49e-15</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="2" data-code-annotation="1">Run a regression of the M (mediator) on X using the <code>lm()</code> function</span>
+<span data-code-lines="2" data-code-cell="annotated-cell-3" data-code-annotation="1">Run a regression of the M (mediator) on X using the <code>lm()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="3" data-code-annotation="2">Show output of the M on X regression using the <code>summary()</code> function</span>
+<span data-code-lines="3" data-code-cell="annotated-cell-3" data-code-annotation="2">Show output of the M on X regression using the <code>summary()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="6" data-code-annotation="3">Run a regression of Y on M and X using the <code>lm()</code> function</span>
+<span data-code-lines="6" data-code-cell="annotated-cell-3" data-code-annotation="3">Run a regression of Y on M and X using the <code>lm()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="7" data-code-annotation="4">Show output of the Y on M and X regression using the <code>summary()</code> function</span>
+<span data-code-lines="7" data-code-cell="annotated-cell-3" data-code-annotation="4">Show output of the Y on M and X regression using the <code>summary()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="10,11,12,13,14,15" data-code-annotation="5">Run a mediation using the two regressions above. <code>treat</code> is the name of your X condition. <code>mediator</code> is the name of your mediating variable. Setting <code>boot</code> to <code>TRUE</code> will ensure that your mediation is bootstrapped. Lastly, the <code>sims</code> argument tells R how many samples you wish to bootstrap from. Typically you want ~ 5000 or more.</span>
+<span data-code-lines="10,11,12,13,14,15" data-code-cell="annotated-cell-3" data-code-annotation="5">Run a mediation using the two regressions above. <code>treat</code> is the name of your X condition. <code>mediator</code> is the name of your mediating variable. Setting <code>boot</code> to <code>TRUE</code> will ensure that your mediation is bootstrapped. Lastly, the <code>sims</code> argument tells R how many samples you wish to bootstrap from. Typically you want ~ 5000 or more.</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="17" data-code-annotation="6">For a summary of your mediation, use the <code>summary()</code> function. The indirect effect is labeled ACME</span>
+<span data-code-lines="17" data-code-cell="annotated-cell-3" data-code-annotation="6">For a summary of your mediation, use the <code>summary()</code> function. The indirect effect is labeled ACME</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="7">7</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="20" data-code-annotation="7">The <code>plot()</code> function here will give you a graphical representation of the output above with respect to the range of the confidence interval for each metric. Please note by default this is the 95% confidence interval</span>
+<span data-code-lines="20" data-code-cell="annotated-cell-3" data-code-annotation="7">The <code>plot()</code> function here will give you a graphical representation of the output above with respect to the range of the confidence interval for each metric. Please note by default this is the 95% confidence interval</span>
 </dd>
 </dl>
 </div>
@@ -4778,15 +4779,15 @@ Simulations: 5000 </code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="2" data-code-annotation="1">Test of the residual normality of the moderation using the <code>shapiro.test()</code> function</span>
+<span data-code-lines="2" data-code-cell="annotated-cell-4" data-code-annotation="1">Test of the residual normality of the moderation using the <code>shapiro.test()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="5" data-code-annotation="2">Test of the multicollinearity of the moderation analyses using the <code>vif()</code> function in the <code>car</code> package. Because there is an interaction, you must specify an additional argument of <code>type = c(&quot;predictor&quot;)</code> to properly account for the interaction effect.</span>
+<span data-code-lines="5" data-code-cell="annotated-cell-4" data-code-annotation="2">Test of the multicollinearity of the moderation analyses using the <code>vif()</code> function in the <code>car</code> package. Because there is an interaction, you must specify an additional argument of <code>type = c(&quot;predictor&quot;)</code> to properly account for the interaction effect.</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="8" data-code-annotation="3">To test the independence of errors assumption, you can do so using the <code>durbinWatsonTest()</code> function from the <code>car</code> package.</span>
+<span data-code-lines="8" data-code-cell="annotated-cell-4" data-code-annotation="3">To test the independence of errors assumption, you can do so using the <code>durbinWatsonTest()</code> function from the <code>car</code> package.</span>
 </dd>
 </dl>
 </div>
@@ -4815,7 +4816,7 @@ predictor    1  3               1      condition             --
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-8" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-8" data-code-lines="2" data-code-annotation="2">To assess multicollinearity, the best course of action is a simple correlation matrix. You can achieve this using the <code>cor()</code> function for a correlation matrix</span>
+<span data-code-lines="2" data-code-cell="annotated-cell-8" data-code-annotation="2">To assess multicollinearity, the best course of action is a simple correlation matrix. You can achieve this using the <code>cor()</code> function for a correlation matrix</span>
 </dd>
 </dl>
 </div>
@@ -4841,8 +4842,8 @@ condition -0.06539201 -0.1069215 -0.07432941  1.00000000</code></pre>
 </div>
 </div>
 </section>
-<section id="using-moderation-and-mediation-usings-hayes-process-macro-for-r" class="level1">
-<h1>Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)</h1>
+<section id="using-moderation-and-mediation-usings-hayes-process-macro-for-r" class="level2">
+<h2 class="anchored" data-anchor-id="using-moderation-and-mediation-usings-hayes-process-macro-for-r">Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)</h2>
 <p>Click on the following <a href="https://www.afhayes.com/public/processv43.zip">link</a> to download the R script for the PROCESS macro for R.</p>
 <div class="cell" data-hash="moderation_mediation_cache/html/run hayes file_515d5aab8e06876e56a6be12f1bfbcc1">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;process.R&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -4861,6 +4862,7 @@ Workshop schedule at http://haskayne.ucalgary.ca/CCRAM
  </code></pre>
 </div>
 </div>
+</section>
 <section id="a-moderation-example-using-hayes-process-macro" class="level2">
 <h2 class="anchored" data-anchor-id="a-moderation-example-using-hayes-process-macro">A Moderation Example Using Hayes PROCESS Macro</h2>
 <div class="cell" data-hash="moderation_mediation_cache/html/running moderation with hayes_ec23e9d1f0cabd71e8163b000cea8dcf">
@@ -4874,27 +4876,27 @@ Workshop schedule at http://haskayne.ucalgary.ca/CCRAM
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="1" data-code-annotation="1">Assign your data to the <code>data</code> argument</span>
+<span data-code-lines="1" data-code-cell="annotated-cell-10" data-code-annotation="1">Assign your data to the <code>data</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="2" data-code-annotation="2">Assign your outcome variable to the <code>y</code> argument</span>
+<span data-code-lines="2" data-code-cell="annotated-cell-10" data-code-annotation="2">Assign your outcome variable to the <code>y</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="3" data-code-annotation="3">Assign your predictor variable to the <code>x</code> argument</span>
+<span data-code-lines="3" data-code-cell="annotated-cell-10" data-code-annotation="3">Assign your predictor variable to the <code>x</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="4" data-code-annotation="4">Assign your moderator to the <code>w</code> argument</span>
+<span data-code-lines="4" data-code-cell="annotated-cell-10" data-code-annotation="4">Assign your moderator to the <code>w</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="5" data-code-annotation="5">Set your <code>model</code> argument to <code>1</code> for simple moderation</span>
+<span data-code-lines="5" data-code-cell="annotated-cell-10" data-code-annotation="5">Set your <code>model</code> argument to <code>1</code> for simple moderation</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="6" data-code-annotation="6">The <code>stand = 1</code> argument standardizes your output</span>
+<span data-code-lines="6" data-code-cell="annotated-cell-10" data-code-annotation="6">The <code>stand = 1</code> argument standardizes your output</span>
 </dd>
 </dl>
 </div>
@@ -4971,31 +4973,31 @@ Tip
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="1" data-code-annotation="1">Assign your data to the <code>data</code> argument</span>
+<span data-code-lines="1" data-code-cell="annotated-cell-11" data-code-annotation="1">Assign your data to the <code>data</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="2" data-code-annotation="2">Assign your outcome variable to the <code>y</code> argument</span>
+<span data-code-lines="2" data-code-cell="annotated-cell-11" data-code-annotation="2">Assign your outcome variable to the <code>y</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="3" data-code-annotation="3">Assign your predictor variable to the <code>x</code> argument</span>
+<span data-code-lines="3" data-code-cell="annotated-cell-11" data-code-annotation="3">Assign your predictor variable to the <code>x</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="4" data-code-annotation="4">Assign your mediator to the <code>m</code> argument</span>
+<span data-code-lines="4" data-code-cell="annotated-cell-11" data-code-annotation="4">Assign your mediator to the <code>m</code> argument</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="5" data-code-annotation="5">Set your <code>model</code> argument to <code>4</code> for simple mediation</span>
+<span data-code-lines="5" data-code-cell="annotated-cell-11" data-code-annotation="5">Set your <code>model</code> argument to <code>4</code> for simple mediation</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="6" data-code-annotation="6">The <code>stand = 1</code> argument standardizes your output</span>
+<span data-code-lines="6" data-code-cell="annotated-cell-11" data-code-annotation="6">The <code>stand = 1</code> argument standardizes your output</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="7">7</dt>
 <dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="7" data-code-annotation="7">The <code>boot</code> argument specifies the number of samples you wish to bootstrap</span>
+<span data-code-lines="7" data-code-cell="annotated-cell-11" data-code-annotation="7">The <code>boot</code> argument specifies the number of samples you wish to bootstrap</span>
 </dd>
 </dl>
 </div>
@@ -5405,7 +5407,6 @@ Number of bootstraps for percentile bootstrap confidence intervals: 5000</code><
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

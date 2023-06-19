@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Brier Gallihugh, M.S.">
-<meta name="dcterms.date" content="2023-06-18">
+<meta name="dcterms.date" content="2023-06-19">
 
 <title>R for Statistical Analysis - R Workshop: ANOVA, ANCOVA &amp; Factorial ANOVA</title>
 <style>
@@ -4513,10 +4513,22 @@ vertical-align: -.125em;
     <a class="dropdown-item" href="./ANOVA.html" rel target>
  <span class="dropdown-text">R Workshop: ANOVA, ANCOVA &amp; Factorial ANOVA</span></a>
   </li>  
-        <li class="dropdown-header">factor_analysis.qmd</li>
-        <li class="dropdown-header">moderation_mediation.qmd</li>
-        <li class="dropdown-header">nonparametric.qmd</li>
-        <li class="dropdown-header">SEM.qmd</li>
+        <li>
+    <a class="dropdown-item" href="./factor_analysis.html" rel target>
+ <span class="dropdown-text">R Workshop: Factor Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./moderation_mediation.html" rel target>
+ <span class="dropdown-text">R Workshop: Mediation and Moderation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./nonparametric.html" rel target>
+ <span class="dropdown-text">R Workshop: Non-Parametric Tests</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./SEM.html" rel target>
+ <span class="dropdown-text">R Workshop: CFA &amp; Structural Equation Modeling</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -4586,7 +4598,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 18, 2023</p>
+      <p class="date">June 19, 2023</p>
     </div>
   </div>
   
@@ -4628,23 +4640,23 @@ vertical-align: -.125em;
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-1" data-code-lines="14">Here we are using the <code>filter()</code> function to filter for “Gungan”, “Human” and “Wookiee”</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="1" data-code-lines="14">Here we are using the <code>filter()</code> function to filter for “Gungan”, “Human” and “Wookiee”</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-1" data-code-lines="16">This is the <code>aov()</code> function. Here we are specifying the ANOVA formula.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="2" data-code-lines="16">This is the <code>aov()</code> function. Here we are specifying the ANOVA formula.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-1" data-code-lines="17">The <code>summary()</code> function will give you the output of the ANOVA</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="3" data-code-lines="17">The <code>summary()</code> function will give you the output of the ANOVA</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-cell="annotated-cell-1" data-code-lines="20">Because the <code>species</code> variable has more than 2 conditions, we might want to figure out which comparisons are statistically different from each other. The <code>TukeyHSD()</code> function allows us to perform a post hoc Tukey test</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="4" data-code-lines="20">Because the <code>species</code> variable has more than 2 conditions, we might want to figure out which comparisons are statistically different from each other. The <code>TukeyHSD()</code> function allows us to perform a post hoc Tukey test</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-cell="annotated-cell-1" data-code-lines="22">Maybe Tukey isn’t your favorite correction. Another route might be to use a pairwise t test that corrects for multiple comparisons using a Bonferroni correction. You can do that with the <code>pairwise.t.test()</code> function.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="5" data-code-lines="22">Maybe Tukey isn’t your favorite correction. Another route might be to use a pairwise t test that corrects for multiple comparisons using a Bonferroni correction. You can do that with the <code>pairwise.t.test()</code> function.</span>
 </dd>
 </dl>
 </div>
@@ -4720,7 +4732,7 @@ P value adjustment method: bonferroni </code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-4" data-code-lines="1">Another way to assess normality is to look at the skew and kurtosis of the data. Typically skew and kurtosis between -1 and 1 are acceptable. We can see this using the <code>describe()</code> function within the <code>psych</code> package.</span>
+<span data-code-cell="annotated-cell-4" data-code-annotation="1" data-code-lines="1">Another way to assess normality is to look at the skew and kurtosis of the data. Typically skew and kurtosis between -1 and 1 are acceptable. We can see this using the <code>describe()</code> function within the <code>psych</code> package.</span>
 </dd>
 </dl>
 </div>
@@ -4749,7 +4761,7 @@ W = 0.97347, p-value = 0.7143</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-5" data-code-lines="1">The <code>boxplot()</code> function will give us a visual representation of the DV at each level of the IV. We are looking for boxplots that are roughly the same height across each group.</span>
+<span data-code-cell="annotated-cell-5" data-code-annotation="1" data-code-lines="1">The <code>boxplot()</code> function will give us a visual representation of the DV at each level of the IV. We are looking for boxplots that are roughly the same height across each group.</span>
 </dd>
 </dl>
 </div>
@@ -4767,7 +4779,7 @@ W = 0.97347, p-value = 0.7143</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-6" data-code-lines="1">The <code>leveneTest()</code> function from the <code>car</code> package takes a DV and IV as arguments.</span>
+<span data-code-cell="annotated-cell-6" data-code-annotation="1" data-code-lines="1">The <code>leveneTest()</code> function from the <code>car</code> package takes a DV and IV as arguments.</span>
 </dd>
 </dl>
 </div>
@@ -4821,27 +4833,27 @@ group  2   1.168 0.3288
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-7" data-code-lines="4">This displays our ANCOVA output with species and then mass.</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="1" data-code-lines="4">This displays our ANCOVA output with species and then mass.</span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-7" data-code-lines="7">This displays our ANCOVA output with mass and then species. We can see that 1 and 2 are different. This is because R by default does a sequential ANCOVA so order matters.</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="2" data-code-lines="7">This displays our ANCOVA output with mass and then species. We can see that 1 and 2 are different. This is because R by default does a sequential ANCOVA so order matters.</span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-7" data-code-lines="9">To get around this, we can use the <code>Anova()</code> function in the <code>car</code> package to specify that we want Type III sums of squares. This will then generate an ANCOVA where the order of predictors doesn’t matter</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="3" data-code-lines="9">To get around this, we can use the <code>Anova()</code> function in the <code>car</code> package to specify that we want Type III sums of squares. This will then generate an ANCOVA where the order of predictors doesn’t matter</span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-cell="annotated-cell-7" data-code-lines="18">When having covariates, one might wish to report adjusted means. We can do that using the <code>effect()</code> function from the <code>effects</code> package.</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="4" data-code-lines="18">When having covariates, one might wish to report adjusted means. We can do that using the <code>effect()</code> function from the <code>effects</code> package.</span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-cell="annotated-cell-7" data-code-lines="24">To run a post hoc analysis, we need to use the <code>ghlt()</code> function from the <code>multcomp</code> package. There are additional corrections you can do outside of Tukey. To investigate, please see the documentation.</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="5" data-code-lines="24">To run a post hoc analysis, we need to use the <code>ghlt()</code> function from the <code>multcomp</code> package. There are additional corrections you can do outside of Tukey. To investigate, please see the documentation.</span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-annotation="6" data-code-cell="annotated-cell-7" data-code-lines="29">To get basic ANOVA effect size statistics, we can use the <code>anova_stats()</code> function from the <code>sjstats</code> package.</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="6" data-code-lines="29">To get basic ANOVA effect size statistics, we can use the <code>anova_stats()</code> function from the <code>sjstats</code> package.</span>
 </dd>
 </dl>
 </div>
@@ -4894,9 +4906,9 @@ Fit: aov(formula = height ~ species + mass, data = data)
 
 Linear Hypotheses:
                       Estimate Std. Error t value Pr(&gt;|t|)    
-Human - Gungan == 0    -33.958      6.748  -5.033  &lt; 1e-04 ***
-Wookiee - Gungan == 0    1.054     10.333   0.102 0.993963    
-Wookiee - Human == 0    35.012      7.846   4.462 0.000521 ***
+Human - Gungan == 0    -33.958      6.748  -5.033   &lt;0.001 ***
+Wookiee - Gungan == 0    1.054     10.333   0.102    0.994    
+Wookiee - Human == 0    35.012      7.846   4.462   &lt;0.001 ***
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 (Adjusted p values reported -- single-step method)
@@ -4909,15 +4921,15 @@ Multiple Comparisons of Means: Tukey Contrasts
 
 Fit: aov(formula = height ~ species + mass, data = data)
 
-Quantile = 2.4828
+Quantile = 2.4831
 95% family-wise confidence level
  
 
 Linear Hypotheses:
                       Estimate lwr      upr     
-Human - Gungan == 0   -33.9578 -50.7111 -17.2044
-Wookiee - Gungan == 0   1.0541 -24.6022  26.7103
-Wookiee - Human == 0   35.0118  15.5319  54.4917
+Human - Gungan == 0   -33.9578 -50.7126 -17.2030
+Wookiee - Gungan == 0   1.0541 -24.6044  26.7125
+Wookiee - Human == 0   35.0118  15.5302  54.4934
 
 term      |    sumsq |   meansq | df | statistic | p.value | etasq | partial.etasq | omegasq | partial.omegasq | epsilonsq | cohens.f | power
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -4942,7 +4954,7 @@ Residuals | 1805.669 |   82.076 | 22 |           |         |       |            
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-8" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-8" data-code-lines="1">To assess this statistically, one needs to run an ANOVA looking at each predictor with each additional parameter. We do not want these to be statistically significant.</span>
+<span data-code-cell="annotated-cell-8" data-code-annotation="1" data-code-lines="1">To assess this statistically, one needs to run an ANOVA looking at each predictor with each additional parameter. We do not want these to be statistically significant.</span>
 </dd>
 </dl>
 </div>
@@ -4980,7 +4992,7 @@ Tip
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-9" data-code-lines="2">To test this assumption, one just needs to test the interaction effects within the model. The code for this is shown here.</span>
+<span data-code-cell="annotated-cell-9" data-code-annotation="1" data-code-lines="2">To test this assumption, one just needs to test the interaction effects within the model. The code for this is shown here.</span>
 </dd>
 </dl>
 </div>
@@ -5026,15 +5038,15 @@ Tip
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-10" data-code-lines="1">The <code>scale()</code> function will scale the residuals of the ANOVA. The <code>residuals()</code> function pulls out the residuals within the ANOVA</span>
+<span data-code-cell="annotated-cell-10" data-code-annotation="1" data-code-lines="1">The <code>scale()</code> function will scale the residuals of the ANOVA. The <code>residuals()</code> function pulls out the residuals within the ANOVA</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-10" data-code-lines="2">Statistical summary of the residuals using the <code>describe()</code> function in the <code>psych</code> package</span>
+<span data-code-cell="annotated-cell-10" data-code-annotation="2" data-code-lines="2">Statistical summary of the residuals using the <code>describe()</code> function in the <code>psych</code> package</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-10" data-code-lines="3">Statistical test (Shapiro Wilks) of the residuals using the <code>shapiro.test()</code> function</span>
+<span data-code-cell="annotated-cell-10" data-code-annotation="3" data-code-lines="3">Statistical test (Shapiro Wilks) of the residuals using the <code>shapiro.test()</code> function</span>
 </dd>
 </dl>
 </div>
@@ -5062,7 +5074,7 @@ W = 0.95143, p-value = 0.2505</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-11" data-code-lines="1,2,3,4,5,6">A graphical histogram (with normal distribution overlay) of the model residuals</span>
+<span data-code-cell="annotated-cell-11" data-code-annotation="1" data-code-lines="1,2,3,4,5,6">A graphical histogram (with normal distribution overlay) of the model residuals</span>
 </dd>
 </dl>
 </div>
@@ -5083,7 +5095,7 @@ W = 0.95143, p-value = 0.2505</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-12" data-code-lines="2">A statistical test (Levene’s test) of the homogeneity assumption using the <code>leveneTest()</code> function in the <code>car</code> package.</span>
+<span data-code-cell="annotated-cell-12" data-code-annotation="1" data-code-lines="2">A statistical test (Levene’s test) of the homogeneity assumption using the <code>leveneTest()</code> function in the <code>car</code> package.</span>
 </dd>
 </dl>
 </div>
@@ -5105,7 +5117,7 @@ group  2   1.168 0.3288
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-13" data-code-lines="2,3">A visual representation of the homogeneity of variance assumption using a boxplot</span>
+<span data-code-cell="annotated-cell-13" data-code-annotation="1" data-code-lines="2,3">A visual representation of the homogeneity of variance assumption using a boxplot</span>
 </dd>
 </dl>
 </div>
@@ -5127,7 +5139,7 @@ group  2   1.168 0.3288
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-14" data-code-lines="1,2">Visual representation of the CV to DV linearity assumption</span>
+<span data-code-cell="annotated-cell-14" data-code-annotation="1" data-code-lines="1,2">Visual representation of the CV to DV linearity assumption</span>
 </dd>
 </dl>
 </div>
@@ -5162,43 +5174,43 @@ group  2   1.168 0.3288
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-15" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-15" data-code-lines="2">Start with the <code>starwars</code> data set</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="1" data-code-lines="2">Start with the <code>starwars</code> data set</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-15" data-code-lines="3">Use the <code>select()</code> function to pull out mass, homeworld and specices variables</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="2" data-code-lines="3">Use the <code>select()</code> function to pull out mass, homeworld and specices variables</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-15" data-code-lines="4">Call the <code>mutate()</code> function to format the homeworld variable using the <code>as.factor()</code> function.</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="3" data-code-lines="4">Call the <code>mutate()</code> function to format the homeworld variable using the <code>as.factor()</code> function.</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-cell="annotated-cell-15" data-code-lines="5">Format the species variables as a factor using the <code>as.factor()</code> function.</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="4" data-code-lines="5">Format the species variables as a factor using the <code>as.factor()</code> function.</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-cell="annotated-cell-15" data-code-lines="6">Use the <code>filter()</code> function to filter for observations with homeworld = “Tatooine” OR “Naboo”</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="5" data-code-lines="6">Use the <code>filter()</code> function to filter for observations with homeworld = “Tatooine” OR “Naboo”</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-annotation="6" data-code-cell="annotated-cell-15" data-code-lines="7">Use the <code>filter()</code> function to filter for observations with species = “Human” OR “Droid”</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="6" data-code-lines="7">Use the <code>filter()</code> function to filter for observations with species = “Human” OR “Droid”</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="7">7</dt>
 <dd>
-<span data-code-annotation="7" data-code-cell="annotated-cell-15" data-code-lines="9">Create an ANOVA object using the <code>aov()</code> function</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="7" data-code-lines="9">Create an ANOVA object using the <code>aov()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="8">8</dt>
 <dd>
-<span data-code-annotation="8" data-code-cell="annotated-cell-15" data-code-lines="10">Use the <code>Anova()</code> function from the <code>car()</code> package to specifiy Type III Sums of Squares</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="8" data-code-lines="10">Use the <code>Anova()</code> function from the <code>car()</code> package to specifiy Type III Sums of Squares</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="9">9</dt>
 <dd>
-<span data-code-annotation="9" data-code-cell="annotated-cell-15" data-code-lines="13">Create an Regression object using the <code>lm()</code> function</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="9" data-code-lines="13">Create an Regression object using the <code>lm()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-15" data-target-annotation="10">10</dt>
 <dd>
-<span data-code-annotation="10" data-code-cell="annotated-cell-15" data-code-lines="14">Show output of the regression object using the <code>summary()</code> function.</span>
+<span data-code-cell="annotated-cell-15" data-code-annotation="10" data-code-lines="14">Show output of the regression object using the <code>summary()</code> function.</span>
 </dd>
 </dl>
 </div>
@@ -5245,7 +5257,7 @@ F-statistic:  2.91 on 3 and 8 DF,  p-value: 0.1009</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-17" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-17" data-code-lines="1">Plot the residuals of the model using the <code>plot()</code> and <code>lm()</code> functions for mass on homeworld</span>
+<span data-code-cell="annotated-cell-17" data-code-annotation="2" data-code-lines="1">Plot the residuals of the model using the <code>plot()</code> and <code>lm()</code> functions for mass on homeworld</span>
 </dd>
 </dl>
 </div>
@@ -5267,11 +5279,11 @@ F-statistic:  2.91 on 3 and 8 DF,  p-value: 0.1009</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-18" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-18" data-code-lines="1">Statistical summary of the model residuals using the <code>describe()</code> function in the <code>psych</code> package</span>
+<span data-code-cell="annotated-cell-18" data-code-annotation="1" data-code-lines="1">Statistical summary of the model residuals using the <code>describe()</code> function in the <code>psych</code> package</span>
 </dd>
 <dt data-target-cell="annotated-cell-18" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-18" data-code-lines="2">Statistical test (Shapiro Wilk) of the residuals using the <code>resid()</code> and <code>shapiro.test()</code> functions</span>
+<span data-code-cell="annotated-cell-18" data-code-annotation="2" data-code-lines="2">Statistical test (Shapiro Wilk) of the residuals using the <code>resid()</code> and <code>shapiro.test()</code> functions</span>
 </dd>
 </dl>
 </div>
@@ -5297,11 +5309,11 @@ W = 0.90166, p-value = 0.1666</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-21" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-21" data-code-lines="2,3">Fitted object of the ANCOVA</span>
+<span data-code-cell="annotated-cell-21" data-code-annotation="3" data-code-lines="2,3">Fitted object of the ANCOVA</span>
 </dd>
 <dt data-target-cell="annotated-cell-21" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-cell="annotated-cell-21" data-code-lines="5">Plot of the residual x fitted data using the <code>plot()</code> function</span>
+<span data-code-cell="annotated-cell-21" data-code-annotation="4" data-code-lines="5">Plot of the residual x fitted data using the <code>plot()</code> function</span>
 </dd>
 </dl>
 </div>
@@ -5334,15 +5346,15 @@ W = 0.90166, p-value = 0.1666</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-22" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-22" data-code-lines="1">Levene test of mass x species using <code>leveneTest()</code> function</span>
+<span data-code-cell="annotated-cell-22" data-code-annotation="1" data-code-lines="1">Levene test of mass x species using <code>leveneTest()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-22" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-22" data-code-lines="3">Levene test of mass x homeworld using <code>leveneTest()</code> function</span>
+<span data-code-cell="annotated-cell-22" data-code-annotation="2" data-code-lines="3">Levene test of mass x homeworld using <code>leveneTest()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-22" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-22" data-code-lines="5">Levene test of mass x species/homeworld interaction using <code>leveneTest()</code> function</span>
+<span data-code-cell="annotated-cell-22" data-code-annotation="3" data-code-lines="5">Levene test of mass x species/homeworld interaction using <code>leveneTest()</code> function</span>
 </dd>
 </dl>
 </div>
@@ -5373,7 +5385,7 @@ group  3  0.3306 0.8037
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-23" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-23" data-code-lines="1">Plot ANOVA residuals using <code>plot()</code> function</span>
+<span data-code-cell="annotated-cell-23" data-code-annotation="1" data-code-lines="1">Plot ANOVA residuals using <code>plot()</code> function</span>
 </dd>
 </dl>
 </div>
@@ -5394,15 +5406,15 @@ group  3  0.3306 0.8037
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-24" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-24" data-code-lines="1">Create residual data set</span>
+<span data-code-cell="annotated-cell-24" data-code-annotation="1" data-code-lines="1">Create residual data set</span>
 </dd>
 <dt data-target-cell="annotated-cell-24" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-24" data-code-lines="3">Statistical test of residual normality using <code>shapiro.test()</code> function</span>
+<span data-code-cell="annotated-cell-24" data-code-annotation="2" data-code-lines="3">Statistical test of residual normality using <code>shapiro.test()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-24" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-24" data-code-lines="5">Descriptive statistics of residuals using <code>describe()</code> function in the <code>psych</code> package</span>
+<span data-code-cell="annotated-cell-24" data-code-annotation="3" data-code-lines="5">Descriptive statistics of residuals using <code>describe()</code> function in the <code>psych</code> package</span>
 </dd>
 </dl>
 </div>

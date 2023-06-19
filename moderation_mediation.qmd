@@ -8,6 +8,8 @@ format:
     code-annotations: select
     self-contained: true
   pdf: default
+hyperrefoptions:
+  - linktoc=all
 toc: true
 toc-location: right
 toc-depth: 3
@@ -104,7 +106,7 @@ cor(df) # <2>
 1. One assumption is that the mediation variables are linearly related. As such the `plot()` function here will test the linearity of each possible combination of variables (i.e., outcome on predictor, outcome on mediator and mediator on predictor). ALL MUST BE LINEARLY RELATED
 2. To assess multicollinearity, the best course of action is a simple correlation matrix. You can achieve this using the `cor()` function for a correlation matrix
 
-# Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)
+## Using Moderation and Mediation Usings Hayes PROCESS Macro (for R)
 
 Click on the following [link](https://www.afhayes.com/public/processv43.zip) to download the R script for the PROCESS macro for R.
 

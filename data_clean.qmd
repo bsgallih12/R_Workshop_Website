@@ -7,6 +7,9 @@ format:
     theme: default
     code-annotations: select
     self-contained: true
+  pdf: default
+hyperrefoptions:
+  - linktoc=all
 toc: true
 toc-location: right
 toc-depth: 3

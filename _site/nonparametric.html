@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Brier Gallihugh, M.S.">
-<meta name="dcterms.date" content="2023-06-18">
+<meta name="dcterms.date" content="2023-06-19">
 
 <title>R for Statistical Analysis - R Workshop: Non-Parametric Tests</title>
 <style>
@@ -4577,7 +4577,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 18, 2023</p>
+      <p class="date">June 19, 2023</p>
     </div>
   </div>
   
@@ -4601,15 +4601,15 @@ vertical-align: -.125em;
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-lines="6" data-code-cell="annotated-cell-1">Take the <code>palmerpenguins</code> data set and use the <code>select</code> function to isolate the island and body_mass_g variables</span>
+<span data-code-cell="annotated-cell-1" data-code-lines="6" data-code-annotation="1">Take the <code>palmerpenguins</code> data set and use the <code>select</code> function to isolate the island and body_mass_g variables</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-lines="7" data-code-cell="annotated-cell-1">Use the <code>filter()</code> function to select for only observations where the island variable is “Biscoe” or “Dream” and omit any missing data after using the <code>na.omit()</code> function.</span>
+<span data-code-cell="annotated-cell-1" data-code-lines="7" data-code-annotation="2">Use the <code>filter()</code> function to select for only observations where the island variable is “Biscoe” or “Dream” and omit any missing data after using the <code>na.omit()</code> function.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-lines="9" data-code-cell="annotated-cell-1">Use the <code>droplevels()</code> function to ensure factor levels no longer present are excluded from analysis.</span>
+<span data-code-cell="annotated-cell-1" data-code-lines="9" data-code-annotation="3">Use the <code>droplevels()</code> function to ensure factor levels no longer present are excluded from analysis.</span>
 </dd>
 </dl>
 </div>
@@ -4674,31 +4674,31 @@ Danger
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-lines="3" data-code-cell="annotated-cell-2">Initiate a non parametric independent samples t test using the <code>wilcox.test()</code> function.</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="1">Initiate a non parametric independent samples t test using the <code>wilcox.test()</code> function.</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-lines="4" data-code-cell="annotated-cell-2">Show the output of the independent sample non-parametric t test</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="4" data-code-annotation="2">Show the output of the independent sample non-parametric t test</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-lines="8,9,10,11,12,13" data-code-cell="annotated-cell-2">Create a pseudo effect size measure for non parametric tests courtesy of Field et al (2012).</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="8,9,10,11,12,13" data-code-annotation="3">Create a pseudo effect size measure for non parametric tests courtesy of Field et al (2012).</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-lines="15" data-code-cell="annotated-cell-2">Generate an effect size measure <em>r</em> using the function defined above. The function requires you provide the wilcox.test object and the sample size</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="15" data-code-annotation="4">Generate an effect size measure <em>r</em> using the function defined above. The function requires you provide the wilcox.test object and the sample size</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-lines="18,19" data-code-cell="annotated-cell-2">Generate some simple descriptive statistics for reporting purposes grouped by island affiliation</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="18,19" data-code-annotation="5">Generate some simple descriptive statistics for reporting purposes grouped by island affiliation</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-annotation="6" data-code-lines="20,21,22,23" data-code-cell="annotated-cell-2">Several statistics included such as sample size, mean, median, and standard deviation.</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="20,21,22,23" data-code-annotation="6">Several statistics included such as sample size, mean, median, and standard deviation.</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="7">7</dt>
 <dd>
-<span data-code-annotation="7" data-code-lines="25" data-code-cell="annotated-cell-2">Show the output of the above calculations using the <code>print()</code> function.</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="25" data-code-annotation="7">Show the output of the above calculations using the <code>print()</code> function.</span>
 </dd>
 </dl>
 </div>
@@ -4752,31 +4752,31 @@ alternative hypothesis: true location shift is not equal to 0
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-lines="1,2,3" data-code-cell="annotated-cell-3">Create a dependent samples t test data set</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="1,2,3" data-code-annotation="1">Create a dependent samples t test data set</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-lines="5,6" data-code-cell="annotated-cell-3">Filter data by condition variable (<code>condition = 1</code>) using the <code>filter()</code> function</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="5,6" data-code-annotation="2">Filter data by condition variable (<code>condition = 1</code>) using the <code>filter()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-lines="8,9" data-code-cell="annotated-cell-3">Filter data by condition variable (<code>condition = 2</code>) using the <code>filter()</code> function</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="8,9" data-code-annotation="3">Filter data by condition variable (<code>condition = 2</code>) using the <code>filter()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-lines="11,12,13,14" data-code-cell="annotated-cell-3">Run a <code>wilcox.test()</code> function for <code>condition = 1</code>. You want to include the time1 and time2 measures. The <code>paired = TRUE</code> tells R that this is a dependent sample t test</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="11,12,13,14" data-code-annotation="4">Run a <code>wilcox.test()</code> function for <code>condition = 1</code>. You want to include the time1 and time2 measures. The <code>paired = TRUE</code> tells R that this is a dependent sample t test</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-lines="16,17,18,19" data-code-cell="annotated-cell-3">Do the same for the <code>condition = 2</code> condition.</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="16,17,18,19" data-code-annotation="5">Do the same for the <code>condition = 2</code> condition.</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-annotation="6" data-code-lines="21,22" data-code-cell="annotated-cell-3">The <code>print()</code> function will give you the results for the non parametric dependent sample t test</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="21,22" data-code-annotation="6">The <code>print()</code> function will give you the results for the non parametric dependent sample t test</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="7">7</dt>
 <dd>
-<span data-code-annotation="7" data-code-lines="25,26" data-code-cell="annotated-cell-3">Use the function shown earlier by Fields et al (2012) to calculate an effect size. It takes the same arguments as before.</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="25,26" data-code-annotation="7">Use the function shown earlier by Fields et al (2012) to calculate an effect size. It takes the same arguments as before.</span>
 </dd>
 </dl>
 </div>
@@ -4829,31 +4829,31 @@ alternative hypothesis: true location shift is not equal to 0
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-lines="1,2,3" data-code-cell="annotated-cell-4">Create a dummy data set</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="1,2,3" data-code-annotation="1">Create a dummy data set</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-lines="7" data-code-cell="annotated-cell-4">Run a non parametric ANOVA using the <code>kruskal.test()</code> function</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="7" data-code-annotation="2">Run a non parametric ANOVA using the <code>kruskal.test()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-lines="9" data-code-cell="annotated-cell-4">Run a posthoc multiple comparisons test using the <code>kruskalmc()</code> function</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="9" data-code-annotation="3">Run a posthoc multiple comparisons test using the <code>kruskalmc()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-lines="13" data-code-cell="annotated-cell-4">Show “means” using the <code>by()</code> function. It takes the rank and condition variables as well as the <code>mean()</code> function</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="13" data-code-annotation="4">Show “means” using the <code>by()</code> function. It takes the rank and condition variables as well as the <code>mean()</code> function</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-lines="18" data-code-cell="annotated-cell-4">Sort levels so that the main comparison condition is first using the <code>relevel()</code> function. It takes your condition variable as well as the factor you want first (in this case 3).</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="18" data-code-annotation="5">Sort levels so that the main comparison condition is first using the <code>relevel()</code> function. It takes your condition variable as well as the factor you want first (in this case 3).</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-annotation="6" data-code-lines="20" data-code-cell="annotated-cell-4">The `levels() function confirms that our ordering is correct (i.e., 3,1,2)</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="20" data-code-annotation="6">The `levels() function confirms that our ordering is correct (i.e., 3,1,2)</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="7">7</dt>
 <dd>
-<span data-code-annotation="7" data-code-lines="22" data-code-cell="annotated-cell-4">Use the <code>kuskalmc()</code> function with the <code>cont</code> argument set to “two-tailed” for planned comparison</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="22" data-code-annotation="7">Use the <code>kuskalmc()</code> function with the <code>cont</code> argument set to “two-tailed” for planned comparison</span>
 </dd>
 </dl>
 </div>
@@ -4904,15 +4904,15 @@ Comparisons
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-lines="1,2" data-code-cell="annotated-cell-5">Create a repeated measures ANOVA dummy data set</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="1,2" data-code-annotation="1">Create a repeated measures ANOVA dummy data set</span>
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-lines="5" data-code-cell="annotated-cell-5">Run a repeated measures non parametric ANOVA using the <code>friedman.test()</code> function. Note that the <code>as.matrix()</code> function is required for the test to run properly.</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="5" data-code-annotation="2">Run a repeated measures non parametric ANOVA using the <code>friedman.test()</code> function. Note that the <code>as.matrix()</code> function is required for the test to run properly.</span>
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-lines="8" data-code-cell="annotated-cell-5">Run a posthoc test using the <code>friedmanmc()</code> function.</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="8" data-code-annotation="3">Run a posthoc test using the <code>friedmanmc()</code> function.</span>
 </dd>
 </dl>
 </div>
