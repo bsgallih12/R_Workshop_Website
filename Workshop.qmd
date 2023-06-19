@@ -387,35 +387,6 @@ You can download all the materials for Day 2 of this workshop [here](https://git
 
 * Please open the sem.qmd file
 
-# MLM (Fields et al, 2012)
-
-## Assumptions To Test
-
-* Outliers and Influential Cases
-* Normality of Residuals
-* Independent Observations^1^
-* Homogeneity of Variance
-
-::: {.callout-important}
-### A Note On Independence
-1. This assumption is not necessarily a concern given that MLM assumes observations are nested (Fields et al, 2012)
-:::
-
-## Live-ish Coding
-
-* Please open the mlm.qmd file
-
-# Quarto: Code + Text
-
-## The Holy Grail of Reproducibility
-
-* What if I told you that it was possible to generate 95% of what you need for a manuscript within RStudio AND you could integrate your analyses as well?
-* What if I also said you could export this to Microsoft Word?
-
-## Let's Talk About Quarto
-
-* Please open the intro_quarto.qmd file
-
 # Final Thoughts
 
 ##
