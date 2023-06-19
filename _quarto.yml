@@ -17,6 +17,11 @@ website:
           - correlation.qmd
           - ttest.qmd
           - regression.qmd
+          - ANOVA.qmd
+          - factor_analysis.qmd
+          - moderation_mediation.qmd
+          - nonparametric.qmd
+          - SEM.qmd
 format:
   html:
     theme: 
